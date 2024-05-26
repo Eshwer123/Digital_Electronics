@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Binary To BCD</title>
+        <style>
+            body{
+    background-color:rgb(255,255,255);
+  }
+  p{
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .title{
+      font-weight: bold;
+      font-size: 60px;
+      color: rgb(0,0,128);
+      text-align: center;
+    }
+    .intro,.mt,.D0,.D1,.D2,.D3,.D4{
+      line-height: 42px;
+      text-align: justify;
+      font-size: 30px;
+    }
+    .min,.tt,.kmp,.lg{
+      font-size: 35px;
+      font-style: italic;
+      font-weight: bold;
+      color: rgb(72, 33, 0);
+    }
+    .tt1{
+
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #wrapper{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .ki{
+        width: 950px;
+    }
+    .lgd{
+        width:700px;
+        height: 1000px;
+        margin-bottom: 70px;
+    }
+    
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <p class="title">Binary To BCD Code Convertor</p>
+        <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For BCD code, 0 to 9 numbers represent the equivalent binary numbers. For the numbers 
+            above 10, LSB of a decimal number is represented by its equivalent binary number and 
+            MSB of a decimal number is also represented by their equivalent binary numbers.
+            The following truth table shows the conversion between the binary code input and the 
+            BCD code output. As you see from the table, the 4-bit binary number is converted into 
+            5-bit BCD code. Decimal code is added in the table to understand the equivalence of 
+            Binary and BCD code.
+            
+        </p>
+        <p class="mt">The converter has 5 outputs D0, D1, D2, D3 and D4. From the truth table, 
+            the minterms can be obtained for each output.</p>
+        <p class="min">Minterms:</p>
+        <p class="D0">D0 = ∑m(1, 3, 5, 7, 9, 11, 13, 15)
+        </p>
+        <p class="D1">D1 = ∑m(2, 3, 6, 7, 12, 13)
+        </p>
+        <p class="D2">D2 = ∑m(4, 5, 6, 7, 14, 15)
+        </p>
+        <p class="D3">D3 = ∑m(8, 9)
+        </p>
+        <p class="D4">D4 = ∑m(10, 11, 12, 13, 14, 15)
+        </p>
+        <P class="tt">Truth&nbsp;Table:</P>
+        <img class="tt1" src="BTBtt.jpg">
+        <p class="kmp">K-Map:</p>
+        <img class="ki" src="btdkmap.png">
+        <p class="lg">Logic Diagram:</p>
+        <img class="lgd" src="btdlg.jpg">
+        <iframe width="1072" height="603" src="https://www.youtube.com/embed/0rLiYpy2CqQ?si=RzuDW1yAI6WPUwLp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </body>
+</html>

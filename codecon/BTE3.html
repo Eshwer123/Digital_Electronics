@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BCD TO EXCESS 3</title>
+        <style>
+            body{
+    background-color: rgb(255,255,255);
+  }
+  p{
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .title{
+      font-weight: bold;
+      font-size: 60px;
+      color: rgb(0,0,128);
+      text-align: center;
+    }
+    .intro,.mt,.D0,.D1,.D2,.D3,.D4{
+      line-height: 42px;
+      text-align: justify;
+      font-size: 30px;
+    }
+    .min,.tt,.kmp,.lg{
+      font-size: 35px;
+      font-style: italic;
+      font-weight: bold;
+      color: rgb(72, 33, 0);
+    }
+    .tt1{
+
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #wrapper{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .ki{
+        width: 950px;
+    }
+    .lgd{
+        width:700px;
+        height: 1000px;
+        margin-bottom: 70px;
+    }
+    
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <p class="title">BCD To Excess 3 Code Convertor</p>
+        <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For this conversion process, 4-bit BCD code is considered as input, which is converted 
+            into 4-bit Excess-3 code. Since 4-bit is considered for BCD code, the output is produced 
+            only for the inputs from 0 to 9.
+            The truth table shown below has only the valid 4-bit BCD codes. For the remaining input 
+            combinations, the output cannot be predicted. So they are don’t care outputs.
+        </p>
+        <p class="mt">The converter has 4 outputs E0, E1, E2, E3. From the truth table, the minterms can be obtained for each output.</p>
+        <p class="min">Minterms:</p>
+        <p class="D0">E0 = ∑m(0, 2, 4, 6, 8) </p>
+        <p class="D1">E1 = ∑m(0, 3, 4, 7, 8) </p>
+        <p class="D2">E2 = ∑m(1, 2, 3, 4, 9) </p>
+        <p class="D3">E3 = ∑m(5, 6, 7, 8, 9) </p>
+        <P class="tt">Truth&nbsp;Table:</P>
+        <img class="tt1" src="bte3tt.jpg">
+        <p class="kmp">K-Map:</p>
+        <img class="ki" src="bte3kmp.jpg">
+        <p class="lg">Logic Diagram:</p>
+        <img class="lgd" src="bte3lg.jpg">
+        <iframe width="1072" height="603" src="https://www.youtube.com/embed/LHw8TVk9iOY?si=WG7K068my1bf-mla" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+    </body>
+</html>

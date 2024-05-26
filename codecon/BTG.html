@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BCD To Gray</title>
+        <style>
+            body{
+    background-color: rgb(255,255,255);
+  }
+  p{
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .title{
+      font-weight: bold;
+      font-size: 60px;
+      color: rgb(0,0,128);
+      text-align: center;
+    }
+    .intro,.mt,.D0,.D1,.D2,.D3,.D4{
+      line-height: 42px;
+      text-align: justify;
+      font-size: 30px;
+    }
+    .min,.tt,.kmp,.lg{
+      font-size: 35px;
+      font-style: italic;
+      font-weight: bold;
+      color: rgb(72, 33, 0);
+    }
+    .tt1{
+
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #wrapper{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .ki{
+        width: 800px;
+    }
+    .lgd{
+        width:700px;
+        height: 700px;
+        margin-bottom: 70px;
+    }
+    
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <p class="title">BCD To Gray Code Convertor</p>
+        <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The truth table having the conversion from BCD code to gray code is shown below. Since 
+            the BCD code has only 4 bits, a total of 9 BCD digits have been considered. The output 
+            is unpredictable for other input combinations.
+            From the minterms of each output G3, G2, G1 and G0, the karnaugh map is implemented 
+            to simplify the function.
+            The code converter circuit for BCD to gray code is drawn as below from the obtained 
+            expression.
+            
+        </p>
+        <p class="mt">The converter has 4 outputs G0, G1, G2 and G3. From the truth table, 
+            the minterms can be obtained for each output.</p>
+        <p class="min">Minterms:</p>
+        <p class="D0">G0 = ∑m(1, 2, 5, 6, 9)
+        </p>
+        <p class="D1">G1 = ∑m(2, 3, 4, 5)
+        </p>
+        <p class="D2">G2 = ∑m(4, 5, 6, 7, 8, 9)
+        </p>
+        <p class="D3">D3 = ∑m(8, 9)
+        <P class="tt">Truth&nbsp;Table:</P>
+        <img class="tt1" src="BTG.jpg">
+        <p class="kmp">K-Map:</p>
+        <img class="ki" src="BTGkm.jpg">
+        <p class="lg">Logic Diagram:</p>
+        <img class="lgd" src="BTGlg.jpg">
+        <iframe width="1072" height="603" src="https://www.youtube.com/embed/cF-Q5j7RUEw?si=nx85kYAjhKYQl6Ti" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+    </body>
+</html>

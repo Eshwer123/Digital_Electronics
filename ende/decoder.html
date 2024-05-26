@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Decoder</title>
+        <style>body{
+            background-color: rgb(255,255,255);
+          }
+          p{
+            color: rgb(0, 0, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .en{
+            font-weight: bold;
+            font-size: 60px;
+            color: rgb(0,0,128);
+            text-align: center;
+            }
+            .ob{
+      font-size: 35px;
+      font-style: italic;
+      font-weight: bold;
+      color: rgb(72, 33, 0);
+    }
+    .mt{
+      line-height: 42px;
+      text-align: justify;
+      font-size: 30px;
+    }
+    #wrapper{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .tt1{
+        height: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tt2{
+        height: 500px;
+        width: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .mt1{
+        line-height: 42px;
+      text-align: justify;
+      font-size: 30px;
+      margin-bottom: 70px;
+    }
+    .tt3{
+        height: 500px;
+        width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+    }
+            
+            
+            </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <p class="en">Decoder</p>
+        <p class="ob">2x4 line Decoder:</p>
+        <p class="mt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A binary decoder has ‗n‘ bit binary input and a one activated output out of 2n outputs. 
+            A binary decoder is used when it is necessary to activate exactly one of 2n outputs 
+            based on an n-bit input value.</p>
+        <p class="mt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here the 2 inputs are decoded into 4 outputs, each output representing one of the 
+            minterms of the two input variables. </p>
+        <p class="mt"></p>
+        <p class="mt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As shown in the truth table, if enable input is 1 (EN= 1) only one of the outputs (Y0 – Y3), 
+            is active for a given input.</p>
+            <P class="ob">Truth&nbsp;Table:</P>
+            <img class="tt2" src="2x4tt.jpg">
+        <p class="mt">The output Y0 is active, ie., Y0= 1 when inputs A= B= 0</p>
+        <p class="mt">Y1 is active when inputs, A= 0 and B= 1</p>
+        <p class="mt">Y2 is 
+            active, when input A= 1 and B= 0</p>
+        <p class="mt">Y3 is 
+            active, when inputs A= B= 1</p>
+            <p class="ob">Logic Diagram:</p>
+        <img class="tt2" src="2x4lg.jpg">
+        <p class="ob">3x8 line Decoder:</p>
+        <p class="mt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A 3-to-8 line decoder has three inputs (A, B, C) and eight outputs (Y0- Y7). Based on the 
+            3 inputs one of the eight outputs is selected. 
+            The three inputs are decoded into eight outputs, each output representing one of the 
+            minterms of the 3-input variables. This decoder is used for binary-to-octal conversion. 
+            The input variables may represent a binary number and the outputs will represent the 
+            eight digits in the octal number system. The output variables are mutually exclusive 
+            because only one output can be equal to 1 at any one time. The output line whose 
+            value is equal to 1 represents the minterm equivalent of the binary number presently 
+            available in the input lines. </p>
+            <P class="ob">Truth&nbsp;Table:</P>
+            <img class="tt2" src="3x8tt.jpg">
+            <p class="ob">Logic Diagram:</p>
+        <img class="tt3" src="3x8lg.jpg">
+
+    </div>
+    </body>
+</html>

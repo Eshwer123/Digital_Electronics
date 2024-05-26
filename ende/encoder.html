@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Encoder</title>
+        <style>body{
+            background-color:rgb(255,255,255);
+          }
+          p{
+            color:rgb(0, 0, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .en{
+            font-weight: bold;
+            font-size: 60px;
+            color: rgb(0,0,128);
+            text-align: center;
+            }
+            .ob{
+      font-size: 35px;
+      font-style: italic;
+      font-weight: bold;
+      color: rgb(72, 33, 0);
+    }
+    .mt{
+      line-height: 42px;
+      text-align: justify;
+      font-size: 30px;
+    }
+    #wrapper{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .tt1{
+        height: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tt2{
+        height: 500px;
+        width: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .mt1{
+        line-height: 42px;
+      text-align: justify;
+      font-size: 30px;
+      margin-bottom: 70px;
+    }
+            
+            
+            </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <p class="en">Encoder</p>
+        <p class="ob">8x3 line Encoder:</p>
+        <p class="mt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It has eight inputs (one for each of the octal digits) and the three outputs that generate 
+        the corresponding binary number. It is assumed that only one input has a value of 1 at 
+        any given time.</p>
+        <p class="mt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The encoder can be implemented with OR gates whose inputs are determined directly 
+            from the truth table. Output Z is equal to 1, when the input octal digit is 1 or 3 or 5 or 7. 
+            Output Y is 1 for octal digits 2, 3, 6, or 7 and the output X is 1 for digits 4, 5, 6 or 7. These 
+            conditions can be expressed by the following output Boolean functions: </p>
+        <p class="mt">X= D4+D5+D6+D7</p>
+        <p class="mt">Y= D2+ D3+ D6+ D7 x= D4+ D5+ 
+            D6+ D7</p>
+        <p class="mt">Z= D1+ D3+ D5+ D7</p>
+        <P class="ob">Truth&nbsp;Table:</P>
+        <img class="tt1" src="entt.jpg">
+        <p class="mt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The encoder can be implemented with three OR gates. The encoder defined in the 
+            below table, has the limitation that only one input can be active at any given time. If 
+            two inputs are active simultaneously, the output produces an undefined combination. </p>
+        <p class="mt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For eg., if D3 and D6 are 1 simultaneously, the output of the encoder may be 111. This 
+            does not represent either D6 or D3. To resolve this problem, encoder circuits must 
+            establish an input priority to ensure that only one input is encoded. If we establish a 
+            higher priority for inputs with higher subscript numbers and if D3 and D6 are 1 at the 
+            same time, the output will be 110 because D6 has higher priority than D3. </p>
+            <p class="ob">Logic Diagram:</p>
+        <img class="tt2" src="enlg.jpg">
+        <p class="mt1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Another problem in the octal-to-binary encoder is that an output with all 0‘s is 
+            generated when all the inputs are 0; this output is same as when D0 is equal to 1. The 
+            discrepancy can be resolved by providing one more output to indicate that atleast one 
+            input is equal to 1.</p>
+    </div>
+    </body>
+</html>

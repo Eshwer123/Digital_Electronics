@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subtractors</title>
+        <style>
+            body{
+    background-color: rgb(255,255,255);
+  }
+  p{
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .title{
+      font-weight: bold;
+      font-size: 60px;
+      color: rgb(0,0,128);
+      text-align: center;
+    }
+    .intro,.mt,.ha{
+      line-height: 42px;
+      text-align: justify;
+      font-size: 30px;
+    }
+    .min,.tt,.kmp,.lg{
+      font-size: 35px;
+      font-style: italic;
+      font-weight: bold;
+      color: rgb(72, 33, 0);
+      
+    }
+    .tt1{
+
+        width: 700px;
+        margin-left: 250px;
+        margin-bottom: 70px;
+    }
+    #wrapper{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .ki{
+        width: 950px;
+        margin-left: 150px;
+    }
+    .lgd{
+        width:700px;
+        height: 1000px;
+        margin-bottom: 70px;
+    }
+    
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <p class="title">Subtractors</p>
+        <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The subtraction of two binary numbers can be performed by taking the 1’s or 2’s complement of the inputs. By this method, the subtraction operation becomes an addition operation, and thus can be performed by using the adder circuits. This results in the reduction of hardware and cost.
+
+            In the subtraction operation, each subtrahend bit (B) of the number is subtracted from its corresponding significant minuend bit (A) to obtain a difference bit.</p>
+        <p class="mt">Subtractors are classified into two types namely:</p>
+        <p class="min">Half Subtractor:</p>
+        <p class="ha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A half-subtractor is a combinational logic circuit that have two inputs and two outputs (i.e. difference and borrow). The half subtractor produces the difference between the two binary bits at the input and also produces a borrow output (if any). In the subtraction (A-B), A is called as Minuend bit and B is called as Subtrahend bit.</p>
+        <p class="kmp">Truth&nbsp;Table:</p>
+        <img class="ki" src="hstt.jpg">
+        <P class="tt">Logic&nbsp;Diagram:</P>
+        <img class="tt1" src="hsd.jpg">
+        <iframe width="1072" height="603" src="https://www.youtube.com/embed/SV4VTYWxKV4?si=EHyuprI5hOJjvKf9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="min">Full Subtractor:</p>
+        <p class="ha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A full-subtractor is a combinational circuit that has three inputs A, B, bin and two outputs d and b. Where, A is the minuend, B is subtrahend, bin is borrow produced by the previous stage, d is the difference output and b is the borrow output.
+
+            Since, the half subtractor can only be used to find the difference of LSBs (Least Significant Bits) of two binary numbers. Thus, if there is any borrow during the subtraction of the LSBs, it will affect the subtraction of the next bits of numbers. To overcome this problem of the half subtractor, a full subtractor is realized.</p>
+        <p class="kmp">Truth&nbsp;Table:</p>
+        <img class="ki" src="fstt.jpg">
+        <P class="tt">Logic&nbsp;Diagram:</P>
+        <img class="tt1" src="fsd.jpg">
+        <iframe width="1072" height="603" src="https://www.youtube.com/embed/dBXGGWbtt6U?si=GY7Zc-MuCPdNuqfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </body>
+</html>

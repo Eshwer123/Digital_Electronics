@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Empowering Learning - Digital Electronics Education Platform</title>
+        
+        <style>
+            body{
+            background-color: rgb(245, 245, 220);
+              }
+            p{
+                color: hsl(48, 4%, 25%);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+            .logo{
+                width: 100px;
+                height: 100px;
+                display: block;
+                margin-left: auto;
+                margin-top: 15px;
+                display: inline-block;               
+            }
+            .h{
+                color: rgb(0, 0, 128);
+                margin-left: 150px;
+                font-weight: bold;
+                font-size:60px;                
+                line-height: 5px;
+                display: inline-block;
+               }
+            
+            .intro,.BG,.CC,.u,.ASintro{
+                line-height: 42px;
+                text-align: justify;
+                font-size: 30px;
+            }
+            .c{
+                color: rgb(47, 22, 1);
+                font-weight: bold;
+                font-style: italic;
+                font-size: 35px;             
+            }
+            .a,.AS,.cc,.uses,.ex{
+                font-weight: bold;
+                font-style: italic;
+                font-size: 35px;
+                color: rgb(72, 60, 50);
+            }
+            .types{
+                font-size: 33px;
+                font-style: italic;
+                font-weight: bold;
+                color: rgb(72, 60, 50);
+
+            }
+            li{
+                font-size: 30px;
+                margin-left: 30px;
+                line-height: 70px;
+                list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FFA500"><g transform="scale(0.6) translate(0,10)" transform-origin="center"><path d="M12 21c-.26 0-.51-.1-.71-.29a.996.996 0 0 1 0-1.41l7.29-7.29-7.29-7.29a.996.996 0 1 1 1.41-1.41l8 8c.39.39.39 1.02 0 1.41l-8 8c-.2.2-.45.29-.71.29ZM4 21c-.26 0-.51-.1-.71-.29a.996.996 0 0 1 0-1.41l7.29-7.29-7.29-7.3A.996.996 0 1 1 4.7 3.3l8 8c.39.39.39 1.02 0 1.41l-8 8c-.2.2-.45.29-.71.29Z"></path></g></svg>')
+            }
+            li::marker{
+                font-size: 100px;
+                line-height: .1;
+            }
+            .point{
+                color: hsl(48, 4%, 25%);
+                background-color: transparent; 
+                text-decoration: none;    
+            }
+            a{
+                color: hsl(48, 4%, 25%);  
+                text-decoration: none;             
+            }
+            a:hover{
+                color:rgb(0, 0, 128);
+                text-decoration: underline; 
+                background-color: transparent;              
+            }
+            #wrapper{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <img class="logo" src="img/logo.jpg">
+        <p class="h" >Learn Digital Electronics</p>               
+        <P class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This website presents a variety of options for exploring digital 
+            combinational circuits. Each circuit selection provides fundamental insights into its operation and functionality, 
+            along with practical demonstrations showcasing outputs for various inputs. Additionally, the site offers comprehensive details 
+            such as logic diagrams and truth tables, enhancing the learning journey for users interested in combinational circuit design.</P>
+        <p class="c"><u>CONTENTS:</u></p>
+        <p class="a">1. Boolean Gates:</p>
+        <p class="BG">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                These are important digital devices that are mainly based on the Boolean function. Logic gates are used to carry out logical operations on single or multiple binary inputs and give one binary output. In simple terms, logic gates are the electronic circuits in a digital system.   
+        </p>
+        <p class="types">
+                Types of Basic Logic Gates:</p>
+        <ul class="point">
+           <li class="and"><a href="bgates/and.html">AND</a></li>
+           <li class="or"><a href="bgates/or.html">OR</a></li>
+           <li clas="not"><a href="bgates/not.html">NOT</a></li>
+           <li clas="xor"><a href="bgates/xor.html">XOR</a></li>
+           <li clas="NAND"><a href="bgates/nand.html">NAND</a></li>
+           <li clas="xnor"><a href="bgates/xnor.html">XNOR</a></li>
+           <li clas="nor"><a href="bgates/nor.html">NOR</a></li>
+        </ul>
+        <div class="container">
+        <iframe width="1072" height="603" src="https://www.youtube.com/embed/Q9gmAgwT6o8?si=TWtucp1yZl63IV0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="cc">2. Code Convertors: </p>
+        <p class="CC">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A code converter circuit will convert coded information in one form to a different coding form. One example of code conversion is to convert BCD to straight binary. The weighting of BCD bits is not the same as straight binary.</p>
+        <p class="uses">Uses:</p>
+        <p class="u">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is sometimes necessary to interface two digital blocks of different coding systems. A conversion circuit must be inserted between two such digital systems to use information of one digital system to other. Therefore, a code converter circuit makes two systems compatible when two systems use different binary codes.</p>
+        <p class="ex">Examples:</p>
+        <ul>
+            <li class="BTB"><a href="codecon/BTB.html">Binary to BCD</a></li>
+            <li class="BTB"><a href="codecon/BTE3.html">BCD to Excess 3</a></li>
+            <li class="BTB"><a href="codecon/BTG.html">BCD to Gray</a></li>
+        </ul>
+        <p class="AS">3. Adders and Subtractors:</p>
+        <p class="ASintro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In digital electronics, adders and subtractors both are the combinational logic circuits (a combinational logic circuit is one whose output depends only on the present inputs, but not on the past outputs) that can add or subtract numbers, more specifically binary numbers. Adders and subtractors are the crucial parts of arithmetic logic circuits in processing devices like microprocessors or microcontrollersIn digital electronics, adders and subtractors both are the combinational logic circuits (a combinational logic circuit is one whose output depends only on the present inputs, but not on the past outputs) that can add or subtract numbers, more specifically binary numbers.</p>
+        <p  class="ASintro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adders and subtractors are the crucial parts of arithmetic logic circuits in processing devices like microprocessors or microcontrollersIn digital electronics, adders and subtractors both are the combinational logic circuits (a combinational logic circuit is one whose output depends only on the present inputs, but not on the past outputs) that can add or subtract numbers, more specifically binary numbers. Adders and subtractors are the crucial parts of arithmetic logic circuits in processing devices like microprocessors or microcontrollers.</p>
+        <ul>
+            <li class="add"><a href="addsub/adders.html">Adders</a></li>
+            <li class="add"><a href="addsub/sub.html">Subtractors</a></li>
+        </ul>
+        <p class="AS">4.Magnitude Comparator:</p>
+        <p class="ASintro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A magnitude digital Comparator is a combinational circuit that compares two digital or binary numbers in order to find out whether one binary number is equal, less than, or greater than the other binary number. We logically design a circuit for which we will have two inputs one for A and the other for B and have three output terminals, one for A > B condition, one for A = B condition, and one for A&lt;B condition.</p>
+        <p class="ASintro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The circuit works by comparing the bits of the two numbers starting from the most significant bit (MSB) and moving toward the least significant bit (LSB). At each bit position, the two corresponding bits of the numbers are compared. If the bit in the first number is greater than the corresponding bit in the second number, the A>B output is set to 1, and the circuit immediately determines that the first number is greater than the second. Similarly, if the bit in the second number is greater than the corresponding bit in the first number, the A&lt;B output is set to 1, and the circuit immediately determines that the first number is less than the second.</p>
+        <p class="ASintro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If the two corresponding bits are equal, the circuit moves to the next bit position and compares the next pair of bits. This process continues until all the bits have been compared. If at any point in the comparison, the circuit determines that the first number is greater or less than the second number, the comparison is terminated, and the appropriate output is generated. If all the bits are equal, the circuit generates an A=B output, indicating that the two numbers are equal.</p>
+        <p class="ex">Types of N-bit Comparators:</p>
+        <ul>
+            <li class="add"><a href="magcom/mag2.html">2-bit Comparator</a></li>
+            <li class="add"><a href="magcom/mag4.html">4-bit Comparator</a></li>
+        </ul>
+        <p class="AS">5. Encoders and Decoders:</p>
+        <ul>
+            <li class="add"><a href="ende/encoder.html">Encoder:</a></li>
+        </ul>
+        <p class="ASintro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An encoder is a digital circuit that performs the inverse operation of a decoder. Hence, 
+            the opposite of the decoding process is called encoding. An encoder is a combinational 
+            circuit that converts binary information from 2^n input lines to a maximum of n unique 
+            output lines. It has 2^n input lines, only one which 1 is active at any time and n output lines. It 
+            encodes one of the active inputs to a coded binary output with n bits. In an encoder, 
+            the number of outputs is less than the number of inputs.</p>
+            <ul>
+                <li class="add"><a href="ende/decoder.html">Decoder:</a></li>
+            </ul>
+            <p class="ASintro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A decoder is a combinational circuit that converts binary information from n 
+                input lines to a maximum of 2^n
+                unique output lines.he encoded information is presented as n inputs producing 2^n
+                possible outputs. 
+                The 2^n output values are from 0 through 2^n-1. A decoder is provided with enable inputs to 
+                activate decoded output based on data inputs. When any one enable input is unasserted, 
+                all outputs of decoder are disabled. </p>
+            <p class=""></p>
+            <iframe width="1072" height="603" src="https://www.youtube.com/embed/feBvhLFQEDk?si=u3iB2gV5XaaWU9Bq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    
+    </div>
+    </body>
+</html>
